@@ -9,3 +9,8 @@
 ## Run
 
     npm start
+
+### Commands
+
+- [PoE wiki](pathofexile.gamepedia.com) search function: `!wiki <text>`
+- Latency check: `!ping`

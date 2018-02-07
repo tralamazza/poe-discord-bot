@@ -28,7 +28,7 @@ client.on("message", message => {
         return
     }
     if (talkedRecently.has(message.author.id)) {
-        return message.reply('Slow down please')
+        return message.author.send('Slow down please')
     }
     talkedRecently.add(message.author.id)
     setTimeout(() => {
