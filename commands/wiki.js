@@ -24,7 +24,7 @@ module.exports = {
             } else {
                 const didyoumean = await page.$('.searchdidyoumean > a')
                 if (didyoumean) {
-                    const maybe = await page.evaluate(el => el.innerHTML, didyoumean);
+                    const maybe = await page.evaluate(el => el.textContent, didyoumean);
                     message.reply(`Did you mean '${maybe}'`)
                 } else {
                     message.reply(`'${args.join(' ')}' not found`)
